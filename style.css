@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* Pagina Inicial */
 .Sorriso{
     text-align: center;
     margin: 21.5vw 25%;
@@ -19,6 +20,7 @@
     color: #f1b212;
 }
 
+/* Configurações Gerais */
 body{
     background-color: aliceblue;
     margin: 0;
@@ -69,19 +71,69 @@ nav ul li a:hover{
     color: #fff;
 }
 
-main{
+.section-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+/*Cards Iniciais*/
+.blue-box{
+    background-color: iceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 22px 2px rgba(0, 0, 0, 0.833);
+    max-width: 1280px;
+    width: 100%;
+}
+
+.cards{
+    display:  grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.cards a{
+    text-decoration: none;
+    color: #f1b212;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(23, 4, 167);
+    color: #f1b212;
+    padding: 10vh;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcoes img{
+    margin-top: 10px;
+    height: 90%;
+}
+.icones{
+    text-align: center;
+    background-color: rgba(80, 78, 82, 0.116);
+    height: 22vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* Vitrine */
+.main-content{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background-color: iceblue;
 }
-.section-title{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0);
-}
+
 
 .white-box{
     background-color: iceblue;
@@ -97,6 +149,7 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
+
 .produto{
     text-align: center;
     background-color: rgba(80, 78, 82, 0.116);
@@ -104,6 +157,7 @@ main{
     width: 100%;
     border-radius: 5px;
 }
+
 .item{
     display: flex;
     flex-direction: column;
@@ -111,7 +165,6 @@ main{
     padding: 20px;
     border-radius: 10px;
     position: relative;
-
 }
 .item img{
     margin-top: 10px;
@@ -156,7 +209,7 @@ main{
 
 footer{
     background-color: rgb(38, 0, 228);;
-    color: /*amarelo*/ #f1b212;
+    color: #f1b212;
     text-align: center;
 }
 
