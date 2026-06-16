@@ -1,38 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* Pagina Inicial */
-.Sorriso{
+.Sorriso {
     text-align: center;
     margin: 21.5vw 25%;
-     max-width: 100vh;
-     max-height: 100vh;
-     background-color: /*azul*/ rgb(23, 4, 167);
+    max-width: 100vh;
+    max-height: 100vh;
+    background-color:
+        /*azul*/
+        rgb(23, 4, 167);
 }
-.Sorriso h1{
+
+.Sorriso h1 {
     font-size: 80px;
-    color: /*amarelo*/ #f1b212;
+    color:
+        /*amarelo*/
+        #f1b212;
     font-family: 'Arial', sans-serif;
 }
-.Sorriso h1 a{
+
+.Sorriso h1 a {
     text-decoration: none;
     color: #f1b212;
 }
+.Sorriso h2{
+color: #fff;
+
+
+}
 
 /* Configurações Gerais */
-body{
+body {
     background-color: aliceblue;
     margin: 0;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-rows:auto auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
 
-header{
+header {
     background-color: rgb(38, 0, 228);
     color: rgb(242, 194, 3);
     text-align: center;
@@ -41,13 +53,13 @@ header{
     font-size: 3.5vh;
 }
 
-nav{
+nav {
     background-color: rgb(0, 5, 157);
     padding: 10px;
     min-height: 2vh;
 }
 
-nav ul{
+nav ul {
     display: flex;
     /* justify-content: center; */
     justify-content: right;
@@ -56,30 +68,30 @@ nav ul{
     margin: 0;
     padding: 0;
     padding-right: 15%;
-    text-shadow: 1px 1px 2px black; 
+    text-shadow: 1px 1px 2px black;
     color: rgb(242, 194, 3);
     font-size: 2.3vh;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: rgb(242, 194, 3);
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #fff;
 }
 
-.section-title{
+.section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 /*Cards Iniciais*/
-.blue-box{
+.blue-box {
     background-color: iceblue;
     padding: 20px;
     border-radius: 10px;
@@ -88,22 +100,30 @@ nav ul li a:hover{
     width: 100%;
 }
 
-.cards{
-    display:  grid;
+.cards {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
-.cards a{
+
+.cards a {
     text-decoration: none;
     color: #f1b212;
     font-size: 1.5rem;
     margin-top: 10px;
 }
 
-.opcoes{
+/*hover do card*/
+.opcoes:hover {
+    background-color: rgb(16, 4, 102);
+    ;
+    transform: scale(1.05);
+}
+
+.opcoes {
     display: flex;
     flex-direction: column;
-    background-color:  rgb(23, 4, 167);
+    background-color: rgb(23, 4, 167);
     color: #f1b212;
     padding: 10vh;
     border-radius: 10px;
@@ -112,13 +132,14 @@ nav ul li a:hover{
     justify-content: center;
 }
 
-.opcoes img{
+.opcoes img {
     margin-top: 10px;
     height: 90%;
 }
-.icones{
+
+.icones {
     text-align: center;
-    background-color: rgba(80, 78, 82, 0.116);
+
     height: 22vh;
     width: 100%;
     border-radius: 5px;
@@ -126,7 +147,7 @@ nav ul li a:hover{
 
 
 /* Vitrine */
-.main-content{
+.main-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +156,7 @@ nav ul li a:hover{
 }
 
 
-.white-box{
+.white-box {
     background-color: iceblue;
     padding: 20px;
     border-radius: 10px;
@@ -144,13 +165,13 @@ nav ul li a:hover{
     width: 100%;
 }
 
-.intems{
-    display:  grid;
+.intems {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
 
-.produto{
+.produto {
     text-align: center;
     background-color: rgba(80, 78, 82, 0.116);
     height: 22vh;
@@ -158,7 +179,7 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
-.item{
+.item {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -166,28 +187,34 @@ nav ul li a:hover{
     border-radius: 10px;
     position: relative;
 }
-.item img{
+
+.item img {
     margin-top: 10px;
     height: 90%;
+    width: 90%;
 }
 
-.item h3{
-    margin:0;
+.item h3 {
+    margin: 0;
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
-    margin:10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
-.item span{
+.item span {
     color: rgb(0, 0, 0);
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.item button{
-    margin 0;
-    background-color: /*azul*/ rgb(23, 4, 167);
-    color: /*amarelo*/ #f1b212;
+.item button {
+    margin: 0;
+    background-color:
+        /*azul*/
+        rgb(23, 4, 167);
+    color:
+        /*amarelo*/
+        #f1b212;
     border-radius: 5px;
     border: none;
     padding: 10px;
@@ -195,21 +222,67 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-@media (max-width: 680px){
-    .intems{
+@media (max-width: 680px) {
+    .intems {
         display: block;
     }
-    .item{
+
+    .item {
         margin-bottom: 20px;
     }
-    main{
+
+    main {
         height: auto;
     }
 }
 
-footer{
-    background-color: rgb(38, 0, 228);;
+footer {
+    background-color: rgb(38, 0, 228);
     color: #f1b212;
+
+
+}
+
+.resp {
+    padding-top: 2rem;
     text-align: center;
 }
 
+.img-footer {
+    float: right;
+
+
+}
+
+.sem-clique {
+    color: inherit;
+    text-decoration: none;
+}
+
+.box{
+   display: flex;
+  border: 5px solid rgb(16, 4, 102);
+  padding: 50px;
+  margin: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCF3FF;
+
+}
+
+
+.card-produto{
+   display: flex;
+  border: 5px solid rgb(16, 4, 102);
+  padding: 50px;
+  margin: 60px;
+    justify-content: center;
+    background-color: #DCF3FF;
+
+}
+.card-conteudo img{
+   /*uhhhhh nao sei como colocar lado a lado*/
+    height: 600px;
+  border: 3px solid rgb(16, 4, 102);
+    float: left;
+}
