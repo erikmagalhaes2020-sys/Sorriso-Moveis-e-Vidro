@@ -1,0 +1,51 @@
+.box{
+    display: flex;
+    border: 5px solid rgb(16, 4, 102);
+    padding: 50px;
+    margin: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCF3FF;
+}
+
+.card-produto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 5px solid rgb(16, 4, 102);
+    padding: 60px;
+    margin-left: 15%;
+    margin-right:15% ;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-gap: 30px;
+    background-color: #DCF3FF;
+}
+.card-conteudo img{
+   /*uhhhhh nao sei como colocar lado a lado*/
+   margin-top: 30px;
+    height: 600px;
+    border: 3px solid rgb(16, 4, 102);
+    margin-left: 60%;
+}
+.card-text{
+    margin-top: 80px;
+    margin-left: 60%;
+}
+.descricao{
+    border: 5px solid rgb(16, 4, 102);
+    padding: 50px;
+}
+
+button {
+    margin: 0;
+    margin-top: 80%;
+    background-color:
+        var(--primary-color);
+    color:
+        var(--yellow);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

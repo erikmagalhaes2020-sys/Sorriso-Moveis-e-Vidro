@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --primary-color:rgb(23, 4, 167);
+    --yellow: rgb(242, 194, 3);
+    --back-color: #DCF3FF;
+}
 
+a{
+    text-decoration: none;
+}
 /* Pagina Inicial */
 .Sorriso {
     text-align: center;
@@ -10,26 +18,22 @@
     max-width: 100vh;
     max-height: 100vh;
     background-color:
-        /*azul*/
-        rgb(23, 4, 167);
+        var(--primary-color);
 }
 
 .Sorriso h1 {
     font-size: 80px;
     color:
-        /*amarelo*/
-        #f1b212;
+        var(--yellow);
     font-family: 'Arial', sans-serif;
 }
 
 .Sorriso h1 a {
     text-decoration: none;
-    color: #f1b212;
+    color: var(--yellow);
 }
 .Sorriso h2{
 color: #fff;
-
-
 }
 
 /* Configurações Gerais */
@@ -46,11 +50,15 @@ body {
 
 header {
     background-color: rgb(38, 0, 228);
-    color: rgb(242, 194, 3);
+    color: var(--yellow);
     text-align: center;
     padding: 4.5vh;
     text-shadow: 1px 1px 2px black;
     font-size: 3.5vh;
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
 }
 
 nav {
@@ -61,7 +69,6 @@ nav {
 
 nav ul {
     display: flex;
-    /* justify-content: center; */
     justify-content: right;
     gap: 2vh;
     list-style: none;
@@ -69,13 +76,13 @@ nav ul {
     padding: 0;
     padding-right: 15%;
     text-shadow: 1px 1px 2px black;
-    color: rgb(242, 194, 3);
+    color: var(--yellow);
     font-size: 2.3vh;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(242, 194, 3);
+    color: var(--yellow);
     transition: color 0.3s ease;
 }
 
@@ -92,7 +99,7 @@ nav ul li a:hover {
 
 /*Cards Iniciais*/
 .blue-box {
-    background-color: iceblue;
+    background-color: var(--back-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 6px 6px 22px 2px rgba(0, 0, 0, 0.833);
@@ -108,7 +115,7 @@ nav ul li a:hover {
 
 .cards a {
     text-decoration: none;
-    color: #f1b212;
+    color: var(--yellow);
     font-size: 1.5rem;
     margin-top: 10px;
 }
@@ -124,7 +131,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     background-color: rgb(23, 4, 167);
-    color: #f1b212;
+    color: var(--yellow);
     padding: 10vh;
     border-radius: 10px;
     position: relative;
@@ -152,12 +159,12 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: iceblue;
+    background-color: var(--back-color);
 }
 
 
 .white-box {
-    background-color: iceblue;
+    background-color: var(--back-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 6px 6px 22px 2px rgba(0, 0, 0, 0.833);
@@ -187,7 +194,10 @@ nav ul li a:hover {
     border-radius: 10px;
     position: relative;
 }
-
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.166);
+    transform: scale(1.05);
+}
 .item img {
     margin-top: 10px;
     height: 90%;
@@ -210,11 +220,9 @@ nav ul li a:hover {
 .item button {
     margin: 0;
     background-color:
-        /*azul*/
-        rgb(23, 4, 167);
+        var(--primary-color);
     color:
-        /*amarelo*/
-        #f1b212;
+        var(--yellow);
     border-radius: 5px;
     border: none;
     padding: 10px;
@@ -238,20 +246,16 @@ nav ul li a:hover {
 
 footer {
     background-color: rgb(38, 0, 228);
-    color: #f1b212;
-
-
+    color: var(--yellow);
 }
 
-.resp {
+.resp{
     padding-top: 2rem;
     text-align: center;
 }
 
 .img-footer {
     float: right;
-
-
 }
 
 .sem-clique {
@@ -259,30 +263,33 @@ footer {
     text-decoration: none;
 }
 
-.box{
-   display: flex;
-  border: 5px solid rgb(16, 4, 102);
-  padding: 50px;
-  margin: 60px;
-    justify-content: center;
-    align-items: center;
-    background-color: #DCF3FF;
-
+/*contato*/
+.cont-box {
+    background-color: var(--back-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 15%;
+    box-shadow: 6px 6px 22px 2px rgba(0, 0, 0, 0.833);
+    max-width: 1280px;
+    width: 100%;
 }
 
-
-.card-produto{
-   display: flex;
-  border: 5px solid rgb(16, 4, 102);
-  padding: 50px;
-  margin: 60px;
-    justify-content: center;
-    background-color: #DCF3FF;
-
+.contatos{
+    display: flex;
+    background-color:  rgba(23, 4, 167, 0.833);
+    color:  var(--yellow);
+    padding: 4vh;
+    border-radius: 10px;
+    position: relative;
+    text-transform: uppercase;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    font-size: 30px;
 }
-.card-conteudo img{
-   /*uhhhhh nao sei como colocar lado a lado*/
-    height: 600px;
-  border: 3px solid rgb(16, 4, 102);
-    float: left;
+.contatos p{
+   margin-left: 180px;
+}
+.contatos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
 }
